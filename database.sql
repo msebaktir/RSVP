@@ -1,0 +1,39 @@
+
+CREATE TABLE IF NOT EXISTS `Events`(
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(255) NOT NULL,
+    Description VARCHAR(255) NOT NULL,
+    StartDate DATETIME NOT NULL,
+    LastCall DATETIME NOT NULL,
+    Status INT,
+)
+
+
+CREATE TABLE IF NOT EXISTS `Customers` (
+    Id INT PRIMARY KEY AUTO_INCREMENT ,
+    UserName VARCHAR(50) NOT NULL,
+    Password VARCHAR(50) NOT NULL,
+    Status INT,
+    EventId INT,
+)
+
+CREATE TABLE IF NOT EXISTS `Guests` (
+    Id INT PRIMARY KEY AUTO_INCREMENT ,
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    Phone VARCHAR(50) NOT NULL,
+    HowManyPeople INT,
+    HowManyChildren INT,
+    CustomerId INT,
+    EventId INT,
+    GiftId INT,
+    Status INT,
+)
+
+CREATE TABLE IF NOT EXISTS `Gifts` (
+    Id INT PRIMARY KEY AUTO_INCREMENT ,
+    Name VARCHAR(50) NOT NULL,
+    Description VARCHAR(50) NOT NULL,
+    Price INT NOT NULL,
+    Image VARCHAR(50) NOT NULL,
+)
