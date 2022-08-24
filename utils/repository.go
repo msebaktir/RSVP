@@ -3,12 +3,12 @@ package utils
 import (
 	"database/sql"
 
+	_ "github.com/mattn/go-sqlite3"
 	models "msebaktir.com/LCV/Models"
-	// _ "go-sql-driver/mysql"
 )
 
 func Connect() (*sql.DB, error) {
-	db, err := sql.Open("mysql", "username:password@(127.0.0.1:3306)/dbname?parseTime=true")
+	db, err := sql.Open("sqlite3", "./db.db")
 	if err != nil {
 		return nil, err
 	}
