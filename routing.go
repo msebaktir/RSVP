@@ -14,8 +14,9 @@ type Routes struct {
 }
 
 var routes = []Routes{
-	Routes{"/Admin", "GET", Admin.AdminPage},
-	Routes{"/", "POST", nil},
-	Routes{"/", "PUT", nil},
-	Routes{"/", "DELETE", nil},
+	{"/", "GET", Admin.AdminPage},
+}
+
+func getAllRoutes() []Routes {
+	return routes
 }
