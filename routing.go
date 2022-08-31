@@ -15,6 +15,7 @@ type Routes struct {
 
 var routes = []Routes{
 	{"/", "GET", Admin.AdminPage},
+	{"/admin/events", "GET", Admin.EventsPage},
 }
 
 func getAllRoutes() []Routes {

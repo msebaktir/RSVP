@@ -32,17 +32,17 @@
 
 <body style="padding: 0;display: flex;flex-direction: column;margin: 0;min-height: 100vh;">
     <header style="background-color: gray;">
-        <h1 style="color: white;margin: 0; padding: 12px;">LCV</h1>
+        <h1 style="color: white;margin: 0; padding: 12px;">RSVP</h1>
     </header>
     <div style="display: grid; grid-template-columns: 1fr 7fr;min-height: 100%;flex-grow:1">
 
         <nav style="    background-color: black;">
             <ul style="list-style: none;margin: 0;padding: 0;">
-                <li><a href="/">Anasayfa</a></li>
+                <li><a href="/">Home Page</a></li>
                 <li><a href="/admin">Admin</a></li>
-                <li><a href="/admin/customers">Müşteriler</a></li>
-                <li><a href="/admin/events">Etkinlikler</a></li>
-                <li><a href="/admin/guests">Katılımcılar</a></li>
+                <li><a href="/admin/customers">Customers</a></li>
+                <li><a href="/admin/events">Events</a></li>
+                <li><a href="/admin/guests">Guests</a></li>
             </ul>
         </nav>
         <div style="padding: 10px;">
